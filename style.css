@@ -65,7 +65,7 @@ h1, h2, h3, h4{
     gap: 1rem;
 }
 #header{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/images/pexels-junior-teixeira-2047905.jpg') center/cover no-repeat fixed;;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/pexels-junior-teixeira-2047905.jpg') center/cover no-repeat fixed;
     justify-content: center;
     align-items: flex-end;
 }
