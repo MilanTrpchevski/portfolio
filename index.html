@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 </head>
 <body>
     <header id="header" class="vh-100 flex">
@@ -31,13 +32,112 @@
                         <div class="title">
                             <h2>About Me</h2>
                         </div>
-                        <p class = "lead">I am Milan Trpchevski, Front-end programmer. I study informational technologies at <abbr title="Faculty of computer science and engineering">FCSE</abbr> in Skopje. </p>                
-                        <a href="#work" class="btn-down">
+                        <p class = "lead">I am Milan Trpchevski, Front-end developer. I study informational technologies at 
+                            <abbr title="Faculty of computer science and engineering">FCSE</abbr> in Skopje.
+                            <br>Mainly i build websites, but i am studying algorithms, data structures, object-oriented programming and structured programing too.</p>                
+                            
+                        <a href="#bar6" class="btn-down">
                             <i class="fas fa-chevron-down"></i>
                         </a>
                 </div>
             </div>
         </section>
+            <section #skills class="skills py-7 mtop background2">
+                <div class="container">
+                    <div class="skills-content flex"></div>
+                    <div class="heading">
+                        <div class="title">
+                            <h2>Programming Skills</h2>
+                        </div>
+            
+            
+                  <div class="right">
+                    <!-- line skill bars-->
+                    <div class="line_content">
+                      <div class="line flex1">
+                        <p>HTML</p>
+                        <div class="bar">
+                          <div id="bar1" class="line_bar html"> </div>
+                        </div>
+                        <h5>100</h5>
+                      </div>
+            
+                      <div class="line flex1">
+                        <p>CSS</p>
+                        <div class="bar">
+                          <div id="bar2" class="line_bar css"></div>
+                        </div>
+                        <h5>90</h5>
+                      </div>
+            
+                      <div class="line flex1">
+                        <p>JavaScript</p>
+                        <div class="bar">
+                          <div id="bar3" class="line_bar js"> </div>
+                        </div>
+                        <h5>60</h5>
+                      </div>
+                      <div class="line flex1">
+                        <p>Wordpress</p>
+                        <div class="bar">
+                          <div id="bar4" class="line_bar word"> </div>
+                        </div>
+                        <h5>80</h5>
+                      </div>
+                      <div class="line flex1">
+                        <p>C++</p>
+                        <div class="bar">
+                          <div id="bar5" class="line_bar cplus"> </div>
+                        </div>
+                        <h5>65</h5>
+                      </div>
+                      <div class="line flex1">
+                        <p>C</p>
+                        <div class="bar">
+                          <div id="bar6" class="line_bar c"> </div>
+                        </div>
+                        <h5>70</h5>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="technical ">
+                        <div class="title">
+                            <h2>Social Skills</h2>
+                        </div>
+                    <div class="skill-container flex">
+                        <div class="circle_box">
+                          <svg class="skill-circle" height="150" width="150">
+                            <circle  id="circle_js1" cx="-40" cy="10" r="48" style="stroke-dasharray: 260px;" transform="translate(50,50) rotate(-90)"></circle>
+                            <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana" font-size="28">80</text>
+                          </svg>
+                          <p class="circle-text">Communication<br> Skills</p>                                
+
+                        </div>
+              
+                        <div class="circle_box">
+                          <svg class="skill-circle" height="150" width="150">
+                            <circle id="circle_js2" cx="-40" cy="10" r="48" style="stroke-dasharray: 240px;" transform="translate(50,50) rotate(-90)"></circle>
+                            <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana" font-size="28">70</text>
+                          </svg>
+                            <p class="circle-text">Team Work</p>                                
+                        </div>
+              
+                        <div class="circle_box">
+                          <svg class="skill-circle" height="150" width="150">
+                            <circle id="circle_js3" cx="-40" cy="10" r="48" style="stroke-dasharray: 220px;" transform="translate(50,50) rotate(-90)"></circle>
+                            <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana" font-size="28">60</text>
+                          </svg>
+                          <p class="circle-text">Project<br> Menagement</p>                                
+
+                        </div>
+              
+                       
+                    </section>
+                    
+                    <!-- line skill bars-->
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 :root{
     --transition: all 300ms ease-in-out;
@@ -47,6 +48,9 @@ h1, h2, h3, h4{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+.title{
+    text-align: center;
 }
 .vh-100{
     min-height: 100vh;
@@ -139,25 +143,258 @@ h1, h2, h3, h4{
     position: relative;
 }
 
-.title h2::after{
-    position: absolute;
-    content: "";
-    top: 120%;
-    left: 45%;
-    
-    width: 110px;
-    height: 4px;
-    background-color: var(--secondary-color);
-}
-
 .lead{
     color: var(--light-color);
 }
+/*---------line skills--------*/
+.flex1{
+    
+}
+.text{
+    color: var(--light-color);
 
+}
+.btn2{
+    color: var(--light-color);
+
+}
+.line_content .line {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.line_content p {
+color: var(--light-color);
+
+text-transform: uppercase;
+width: 35%;
+}
+
+.line_content h5 {
+background: #30D3FF;
+width: 50px;
+height: 40px;
+text-align: center;
+line-height: 40px;
+border-radius: 5px;
+position: relative;
+margin-top: -5px;
+}
+
+.line_content h5::after {
+position: absolute;
+content: '';
+left: -4px;
+top: 12px;
+width: 10px;
+height: 10px;
+background: #30D3FF;
+transform: rotate(45deg);
+}
+
+.line_content .line:nth-child(2) h5::after,
+.line_content .line:nth-child(2) h5 {
+background: #FF761B;
+}
+
+.line_content .line:nth-child(3) h5::after,
+.line_content .line:nth-child(3) h5 {
+background: #FF26BE;
+}
+.line_content .line:nth-child(4) h5::after,
+.line_content .line:nth-child(4) h5 {
+background: lightseagreen
+}
+.line_content .line:nth-child(5) h5::after,
+.line_content .line:nth-child(5) h5 {
+background: lightcoral;
+}
+.line_content .line:nth-child(6) h5::after,
+.line_content .line:nth-child(6) h5 {
+background: lightgreen;
+}
+.line_content .bar {
+width: 60%;
+background: #ffffff;
+height: 5px;
+margin-top: 10px;
+margin-right: 20px;
+}
+.animation_bar{
+    height: 5px;
+    background: #30D3FF;
+    width: 100%;
+    animation: bar 2.8s;
+}
+.line_content .line_bar {
+
+
+}
+
+.line_content .css {
+width: 90%;
+background: #FF761B;
+}
+.line_content .js {
+width: 60%;
+background: #FF26BE;
+}
+.line_content .word {
+width: 80%;
+background: lightseagreen;
+}
+.line_content .cplus {
+width: 65%;
+background: lightcoral;
+}
+.line_content .c {
+width: 70%;
+background: lightgreen;
+}
+
+
+@keyframes bar {
+0% {
+    width: 0%;
+}
+}
+
+@keyframes write {
+0% {
+    left: 0;
+}
+
+20% {
+    content: "15%";
+}
+
+40% {
+    content: "30%";
+}
+
+60% {
+    content: "45%";
+}
+
+80% {
+    content: "60%";
+}
+
+100% {
+    content: "70%";
+}
+
+}
+.technical{ 
+    margin-top: 100px;   
+}
+@keyframes circle_animation {
+    0% {
+        stroke-dashoffset: 340px;
+    }
+    
+    100% {
+        stroke-dashoffset: 0px;
+    }
+    }
+
+.skill-container {
+margin-top: 50px;
+justify-content: space-around;
+
+}
+.circle-box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+circle {
+
+}
+.animation_circle{
+    stroke-width: 5px;
+    stroke: #D593FF;
+    fill: transparent;
+    animation: circle_animation 2s linear backwards;
+}
+.skill-container .circle_box:nth-child(1) circle {
+    stroke: #35FC00;
+    }
+.skill-container .circle_box:nth-child(2) circle {
+stroke: red;
+}
+
+.skill-container .circle_box:nth-child(3) circle {
+stroke: #FFA726;
+}
+
+.skill-container .circle_box:nth-child(4) circle {
+stroke: #00A0D2;
+}
+.skill-circle{
+    margin-left: 30px;
+}
+.circle-text{
+    color: var(--light-color);
+    text-align: center;
+}
+circle p {
+vertical-align: middle;
+display: table-cell;
+}
+@media(min-width: 300px){
+    .title h2{
+        display: inline-block;
+        border-bottom: 4px solid var(--secondary-color);
+        font-size: 28px;
+    }
+    .line_content .bar {
+        display: none;
+    }
+    .line_content p{
+        overflow-x: auto;
+    }
+    .flex1{
+        justify-content: space-around;
+    }
+    .line_content p {
+        margin-right: 40px;
+    }
+    .skill-container{
+        flex-direction: column;
+    }
+    .skill-circle{
+        
+    
+    }
+    circle{
+        width: 150px;
+        margin: 0 auto;
+    }
+
+}
 @media(min-width: 768px){
     .about-content, .work-top{
         grid-template-columns: repeat(1, 1fr);
         column-gap: 6rem;
         row-gap: 0;
     }
+<<<<<<< HEAD
 }
+=======
+    .skill-container{
+        flex-direction: row;
+    }
+    .line_content .bar{
+        display: flex;
+    }
+    .title h2{
+        display: inline-block;
+        border-bottom: 4px solid var(--secondary-color);
+        font-size: 35px;
+    }
+}
+@media(min-width: 1200px) {
+ 
+}
+>>>>>>> 5eff76e (added js,skill section)
