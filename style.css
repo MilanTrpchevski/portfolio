@@ -379,9 +379,8 @@ display: table-cell;
         column-gap: 6rem;
         row-gap: 0;
     }
-<<<<<<< HEAD
 }
-=======
+
     .skill-container{
         flex-direction: row;
     }
@@ -393,8 +392,7 @@ display: table-cell;
         border-bottom: 4px solid var(--secondary-color);
         font-size: 35px;
     }
-}
+
 @media(min-width: 1200px) {
  
 }
->>>>>>> 5eff76e (added js,skill section)
