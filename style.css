@@ -74,6 +74,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .grid {
   display: grid;
@@ -263,8 +264,6 @@ h4 {
   background: #30d3ff;
   width: 100%;
   animation: bar 2.8s;
-}
-.line_content .line_bar {
 }
 
 .line_content .css {
@@ -550,6 +549,116 @@ circle p {
 }
 
 @media (min-width: 1200px) {
+
 }
 
+.footer{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+  url("images/pexels-cottonbro-9667636.jpg") center/cover no-repeat;
+  color: var(--light-color);
+
+}
+.footer ul{
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.footer ul li a{
+  text-decoration: none;
+  opacity: 0.9;
+  color: var(--secondary-color);
+}
+.copyright{
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background-color: #333;
+  color: #fff;  
+}
+
+@media(max-width: 992px) {
+  #back-to-top-btn { font-size: 22px; width: 40px; height: 40px; bottom: 15px; right: 15px; }
+}
+@media(max-width:768px) {
+  #back-to-top-btn { font-size: 18px; width: 32px; height: 32px; bottom: 6px; right: 6px; }
+}
+
+/* Animations */
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+/* zoomIn */
+@keyframes btnEntrance { 
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }    
+}
+/* zoomOut */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+/* fadeInUp */
+/* @keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+} */
+/* fadeOutDown */
+/* @keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+} */
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;  
+  animation-name: btnExit;
+}
 
