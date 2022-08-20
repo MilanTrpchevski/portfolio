@@ -1,2 +1,2 @@
 # prog
-[link](https://milantrpchevski.github.io/portfolio/)
+[link to github pages](https://milantrpchevski.github.io/portfolio/)
