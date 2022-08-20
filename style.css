@@ -23,6 +23,14 @@ body {
   /* line-height: 1.6rem; */
   background-color: black;
 }
+#preloader{
+  background: #000 url(images/output-onlinegiftools.gif) no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 button,
 .btn {
   cursor: pointer;
