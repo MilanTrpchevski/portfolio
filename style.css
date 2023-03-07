@@ -444,7 +444,7 @@ circle p {
 	margin-left: -150px;
 }
 #projects .item .left .img {
-	height: 500px;
+	/* height: 500px; */
 	overflow: hidden;
 	border-radius: 12px;
 	overflow: hidden;
